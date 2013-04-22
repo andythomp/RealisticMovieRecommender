@@ -1,0 +1,3 @@
+use_social=true
+min_pearson=.5
+min_rating=50

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recommend_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="@string/recommendations"
+        android:textIsSelectable="false"
+        android:textSize="30sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/recommend_list_info"
+        android:layout_width="wrap_content"
+        android:layout_height="250sp"
+        android:textIsSelectable="false"
+        android:textSize="15sp" >
+    </TextView>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.64" >
+    </ListView>
+
+    <Button
+        android:id="@+id/recommend_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/save" />
+
+</LinearLayout>

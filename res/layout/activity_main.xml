@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <fragment android:name="com.paradopolis.realisticmovierecommender.MainFragment"
+          android:id="@+id/recommenderFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.paradopolis.realisticmovierecommender.SplashFragment"
+          android:id="@+id/splashFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.paradopolis.realisticmovierecommender.RecommendListFragment"
+          android:id="@+id/recommendList"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.paradopolis.realisticmovierecommender.FavoriteListFragment"
+          android:id="@+id/favoriteList"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="com.paradopolis.realisticmovierecommender.FriendListFragment"
+          android:id="@+id/friendList"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+ 	<fragment android:name="com.paradopolis.realisticmovierecommender.MovieFragment"
+          android:id="@+id/movieFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+     <fragment android:name="com.paradopolis.realisticmovierecommender.SettingsFragment"
+          android:id="@+id/settingsFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    
+</LinearLayout>

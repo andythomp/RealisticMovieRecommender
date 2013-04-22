@@ -1,0 +1,170 @@
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    
+    <!-- Title and Profile Picture Row -->
+     <!-- ************************************************************************* -->
+    <!-- 1 columns -->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:layout_weight="1">
+ 
+        <com.facebook.widget.ProfilePictureView
+	        android:id="@+id/recommender_profile_pic"
+	        android:layout_width="0px"
+	        android:layout_height="wrap_content"
+	        android:gravity="center|top"
+	        android:layout_weight="1"
+        	android:background="@drawable/picture_border"
+	        android:layout_marginRight="10dp"
+	        facebook:preset_size="large" >
+
+  		</com.facebook.widget.ProfilePictureView>
+
+    	<TextView
+	        android:id="@+id/mainFragTitle"
+	        android:layout_width="0px"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:layout_gravity="right|center_vertical"
+	        android:textColor="#333"
+	        android:text="@string/appNameMultiLine"
+	        android:textIsSelectable="false"
+	        android:gravity="left|center"
+	        android:textSize="28sp" />
+        
+        
+   </TableRow>
+   
+    <!-- Straight line that cuts the UI in two -->
+    <!-- ************************************************************************* -->
+    <!-- 2 columns -->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:layout_weight="1">
+        
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="3dp"
+       		android:layout_weight="1"
+	        android:background="@drawable/line"
+    		android:layout_margin="25dp">
+		</View>
+	    
+    </TableRow>
+    
+     <!-- Main Recommender button row -->
+     <!-- ************************************************************************* -->
+    <!-- 1 columns -->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:layout_weight="1">
+        
+	    <Button
+	        android:id="@+id/recommendButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/button_border"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginRight="25dp"
+	        android:gravity="center" />
+	    
+    </TableRow>
+    
+    <!-- Friends, Favourites, and Settings button row -->
+    <!-- ************************************************************************* -->
+    <!-- 3 columns -->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:layout_weight="1">
+    	
+        <ImageButton
+             android:id="@+id/favouritesButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:gravity="center_horizontal"
+             android:orientation="horizontal"
+             android:src="@drawable/favourites" />
+        
+         <ImageButton
+             android:id="@+id/friendsButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:gravity="center_horizontal"
+             android:orientation="horizontal"
+             android:src="@drawable/friends" />
+
+         <ImageButton
+             android:id="@+id/settingsButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:gravity="center_horizontal"
+             android:orientation="horizontal"
+             android:src="@drawable/settings"/>
+        
+        
+    </TableRow>
+    
+    <!-- Information and Help button row -->
+    <!-- ************************************************************************* -->
+    <!-- 3 columns -->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" 
+        android:layout_weight="1">
+    	
+        <ImageButton
+             android:id="@+id/logoutButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:src="@drawable/logout" />
+        
+        <ImageButton
+             android:id="@+id/helpButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:src="@drawable/help" />
+
+        
+         <ImageButton
+             android:id="@+id/infoButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="#FFFFFF"
+             android:contentDescription="@string/tomatoes_power"
+             android:src="@drawable/information" />
+         
+        
+    </TableRow>
+    	
+
+</TableLayout>

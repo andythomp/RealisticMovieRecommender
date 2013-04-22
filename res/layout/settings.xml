@@ -1,0 +1,116 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" >
+        
+        <TextView
+            android:text="@string/settings"
+            android:textSize="50sp"
+            android:textIsSelectable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10" >
+            </TextView>
+        
+        
+    </TableRow>
+    
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"  >
+
+        <TextView
+            android:text="@string/minRating"
+            android:textSize="30sp"
+            android:textIsSelectable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+
+        <EditText
+            android:id="@+id/minRatingField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="3" />
+        
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:text="@string/minPearson"
+            android:textSize="30sp"
+            android:textIsSelectable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+
+        <EditText
+            android:id="@+id/minPearsonField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="@string/useSocial"
+            android:textSize="30sp"
+            android:textIsSelectable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+
+        <Switch
+            android:id="@+id/useSocialSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton" />
+        
+    </TableRow>
+    
+</TableLayout>

@@ -1,0 +1,67 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:columnCount="2" >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:contentDescription="@string/moviePicture"
+        android:id="@+id/movieIcon"
+        android:src="@drawable/film" 
+        android:background="@drawable/button_border"/>
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_column="0"
+        android:layout_gravity="right|top"
+        android:layout_row="0"
+        android:ems="10"
+        android:textIsSelectable="true" 
+        android:background="@drawable/button_border"
+        android:text="@string/movieName"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/movieGenre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_gravity="left|center_vertical"
+        android:layout_row="1"
+        android:ems="10"
+        android:orientation="horizontal"
+        android:textIsSelectable="true" 
+        android:background="@drawable/button_border"
+        android:text="@string/movieGenre"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+    
+    <TextView
+        android:id="@+id/movieDescription"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_column="0"
+        android:layout_gravity="left|center_vertical"
+        android:layout_row="2"
+        android:ems="10"
+        android:orientation="horizontal"
+        android:textIsSelectable="true" 
+        android:background="@drawable/button_border"
+        android:text="@string/movieDescription"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+</GridLayout>
